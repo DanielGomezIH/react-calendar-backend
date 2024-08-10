@@ -22,15 +22,11 @@ const validateJWT = ( req, resp = response, next ) => {
   } catch ( error ) {
     return resp.status( 401 ).json( {
       ok: false,
-      msg: 'Ínvalid token'
+      msg: 'Invalid token'
     } );
   }
 
-
   next();
-
-
-
 };
 
 module.exports = {
