@@ -14,11 +14,7 @@ const router = Router();
 
 router.use( validateJWT );
 
-router.get( '/', [
-  check,
-  validateFields
-],
-  getEvents );
+router.get( '/', getEvents );
 
 router.post( '/', [
   check( 'title', 'Title is required' ).not().isEmpty(),
@@ -29,15 +25,13 @@ router.post( '/', [
   createEvent );
 
 router.put( '/:id', [
-  check,
+  check( 'title', 'Title is required' ).not().isEmpty(),
+  check( 'start', 'Start date is required' ).custom( isDate ),
+  check( 'end', 'End date is required' ).custom( isDate ),
   validateFields
 ],
   updateEvent );
 
-router.delete( '/:id', [
-  check,
-  validateFields
-],
-  deleteEvent );
+router.delete( '/:id', deleteEvent );
 
 module.exports = router;
