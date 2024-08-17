@@ -14,7 +14,10 @@ dbConnection();
 
 //* 3 CORS
 
-app.use( cors() );
+app.use( cors( {
+  origin: 'https://react-calendar-app-sooty.vercel.app',
+} ) );
+
 
 //* 4 Directorio Público
 
