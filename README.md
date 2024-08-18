@@ -91,5 +91,5 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 If you have any questions or suggestions, feel free to reach out:
 
-- **Email**: your.email@example.com
-- **GitHub**: [yourusername](https://github.com/yourusername)
+- **Email**: danielivgho5@gmail.com
+- **Linkedin**: [danielgomezih](https://www.linkedin.com/in/danielgomezih/)
