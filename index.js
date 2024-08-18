@@ -15,7 +15,7 @@ dbConnection();
 //* 3 CORS
 
 app.use( cors( {
-  origin: 'https://react-calendar-app-sooty.vercel.app',
+  origin: [ 'https://react-calendar-app-sooty.vercel.app', 'https://calendary.cloud', 'https://www.calendary.cloud' ],
 } ) );
 
 
